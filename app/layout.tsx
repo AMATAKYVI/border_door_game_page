@@ -13,9 +13,9 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: 'Border Door Game',
+  title: 'Border Door Game - Official Website',
   description:
-    'Border Door Game is a text-based adventure game where you play as a border guard.',
+    'Official website for Border Door Game - a fast-paced quiz challenge built with Unity 6.1. Test your knowledge and quick thinking under pressure with 30-second questions.',
 };
 
 export default function RootLayout({

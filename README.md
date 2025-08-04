@@ -1,17 +1,30 @@
-# Border Door Game
+# Border Door Game - Official Website
 
-A fast-paced quiz challenge game built with Next.js that tests players' knowledge and quick thinking under pressure.
+A promotional website for Border Door Game, a fast-paced quiz challenge built with Unity 6.1. This Next.js website showcases the game with trailers, screenshots, and information.
 
 ![Border Door Game](public/main_image/first%20screen%20game.png)
 
-## 🎮 About the Game
+## 🎮 About the Project
+
+This repository contains the **promotional website** for Border Door Game. The actual game is built with Unity 6.1, while this website serves as the official landing page and showcase.
+
+### The Game (Unity 6.1)
 
 Border Door Game is an immersive quiz experience where players must correctly answer three questions within a strict time limit of 30 seconds per question. The game features:
 
 - **High-Pressure Gameplay**: Answer 3 questions correctly within 30 seconds each
 - **Instant Elimination**: One wrong answer or timeout ends the game
 - **Engaging UI**: Dynamic loading screens, intuitive start menu, and comprehensive results
-- **Modern Design**: Built with responsive design and smooth animations
+- **Unity-Powered**: Built with Unity 6.1 for smooth performance and professional game mechanics
+
+### The Website (Next.js)
+
+This promotional website includes:
+
+- **Game Showcase**: Screenshots and gameplay trailer
+- **Responsive Design**: Modern web design with smooth animations
+- **Team Information**: Developer profiles and contact details
+- **Game Download/Play Links**: Direct access to the Unity game
 
 ## 🚀 Getting Started
 
@@ -54,6 +67,14 @@ bun dev
 4. Open [http://localhost:3000](http://localhost:3000) in your browser
 
 ## 🛠️ Tech Stack
+
+### Game Engine
+
+- **Unity**: 6.1 (Latest LTS)
+- **Platform**: Cross-platform game development
+- **Language**: C# (for game logic)
+
+### Website
 
 - **Framework**: Next.js 15.4.5
 - **Runtime**: React 19.1.0
