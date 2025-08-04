@@ -1,0 +1,50 @@
+@import url('https://fonts.googleapis.com/css2?family=Mozilla+Headline:wght@200..700&display=swap');
+@import 'tailwindcss';
+
+:root {
+  --background: #000000;
+  --foreground: #ffffff;
+  --highlight: #4a9eff;
+  --highlight-dark: #2980ff;
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-highlight: var(--highlight);
+  --font-headline: 'Mozilla Headline', sans-serif;
+  --font-sans: var(--font-geist-sans);
+  --font-mono: var(--font-geist-mono);
+}
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+  font-family: 'Mozilla Headline', sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+/* Highlight text utilities */
+.highlight {
+  color: var(--highlight);
+}
+
+.highlight-dark {
+  color: var(--highlight-dark);
+}
+
+/* Text styling classes */
+.text-highlight {
+  color: var(--highlight);
+}
+
+.text-highlight-dark {
+  color: var(--highlight-dark);
+}
+
+/* Glow effect for highlighted text */
+.text-glow {
+  color: var(--highlight);
+  text-shadow: 0 0 10px var(--highlight);
+}
