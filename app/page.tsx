@@ -21,6 +21,18 @@ export default function Home() {
                   Home
                 </a>
                 <a
+                  href="#abstract"
+                  className="hover:text-highlight px-3 py-2 rounded-md text-sm font-medium"
+                >
+                  About
+                </a>
+                <a
+                  href="#screenshots"
+                  className="hover:text-highlight px-3 py-2 rounded-md text-sm font-medium"
+                >
+                  Screenshots
+                </a>
+                <a
                   href="#video"
                   className="hover:text-highlight px-3 py-2 rounded-md text-sm font-medium"
                 >
@@ -47,9 +59,23 @@ export default function Home() {
       {/* Banner Section */}
       <section
         id="banner"
-        className="relative min-h-screen flex items-center justify-center text-center px-4"
+        className="relative min-h-screen flex items-center justify-center text-center px-4 overflow-hidden"
       >
-        <div className="max-w-4xl mx-auto">
+        {/* Background Video */}
+        <div className="absolute inset-0 w-full h-full z-0">
+          <iframe
+            className="absolute top-2/3 left-3/5 w-[175%] h-[175%] -translate-x-1/2 -translate-y-1/2 pointer-events-none"
+            src="https://www.youtube.com/embed/gQermu0WrNA?autoplay=1&mute=1&loop=1&playlist=gQermu0WrNA&controls=0&showinfo=0&rel=0&iv_load_policy=3&modestbranding=1&start=24"
+            title="Border Door Game Background Video"
+            frameBorder="0"
+            allow="autoplay; encrypted-media"
+          ></iframe>
+          {/* Dark overlay for better text readability */}
+          <div className="absolute inset-0 bg-black/60 z-10"></div>
+        </div>
+
+        {/* Content */}
+        <div className="max-w-4xl mx-auto relative z-20">
           <h1 className="text-6xl md:text-8xl font-bold mb-6">
             <span className="text-glow">BORDER</span>
             <br />
@@ -64,6 +90,126 @@ export default function Home() {
           <button className="bg-highlight hover:bg-highlight-dark text-black font-bold py-4 px-8 rounded-lg text-lg transition-colors">
             Play Now
           </button>
+        </div>
+      </section>
+
+      {/* Project Abstract Section */}
+      <section id="abstract" className="py-20 px-4 bg-gray-900/30">
+        <div className="max-w-4xl mx-auto text-center">
+          <h2 className="text-4xl font-bold mb-8 text-highlight">
+            About Border Door Game
+          </h2>
+          <div className="bg-black/50 rounded-lg p-8 border border-gray-800">
+            <p className="text-lg text-gray-300 leading-relaxed">
+              Border Door Game is a fast-paced quiz challenge that tests
+              players&apos; knowledge and quick thinking under pressure. The
+              game mechanics are straightforward yet engaging: players must
+              correctly answer three questions within a strict time limit of 30
+              seconds per question. Success requires both accuracy and speed -
+              answer all three questions correctly within the time constraints
+              to win the game. However, if any question is answered incorrectly
+              or time runs out, the player loses immediately. The game features
+              intuitive interfaces including a dynamic loading screen, welcoming
+              start menu, and comprehensive results analysis. Built with modern
+              web technologies, Border Door Game offers smooth gameplay
+              mechanics and immersive visual experiences that keep players
+              engaged and challenged throughout their gaming session.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      {/* Screenshots Gallery Section */}
+      <section id="screenshots" className="py-20 px-4">
+        <div className="max-w-6xl mx-auto">
+          <h2 className="text-4xl font-bold text-center mb-4 text-highlight">
+            Game Screenshots
+          </h2>
+          <p className="text-xl text-center mb-12 text-gray-300">
+            Explore the visual journey through Border Door Game
+          </p>
+
+          <div className="grid md:grid-cols-2 lg:grid-cols-2 gap-8">
+            {/* Screenshot 1 - First Screen */}
+            <div className="bg-black/50 rounded-lg overflow-hidden border border-gray-800">
+              <Image
+                src="/main_image/first screen game.png"
+                alt="Border Door Game - First Screen"
+                width={600}
+                height={400}
+                className="w-full h-64 object-cover"
+              />
+              <div className="p-4">
+                <h3 className="text-xl font-bold mb-2 text-highlight">
+                  Game Interface
+                </h3>
+                <p className="text-gray-400">
+                  The main gameplay interface showcasing the interactive
+                  elements and user controls.
+                </p>
+              </div>
+            </div>
+
+            {/* Screenshot 2 - Loading Screen */}
+            <div className="bg-black/50 rounded-lg overflow-hidden border border-gray-800">
+              <Image
+                src="/main_image/loading screen.png"
+                alt="Border Door Game - Loading Screen"
+                width={600}
+                height={400}
+                className="w-full h-64 object-cover"
+              />
+              <div className="p-4">
+                <h3 className="text-xl font-bold mb-2 text-highlight">
+                  Loading Experience
+                </h3>
+                <p className="text-gray-400">
+                  Dynamic loading screen with progress indicators and engaging
+                  animations.
+                </p>
+              </div>
+            </div>
+
+            {/* Screenshot 3 - Game Start */}
+            <div className="bg-black/50 rounded-lg overflow-hidden border border-gray-800">
+              <Image
+                src="/main_image/game start screen.png"
+                alt="Border Door Game - Start Screen"
+                width={600}
+                height={400}
+                className="w-full h-64 object-cover"
+              />
+              <div className="p-4">
+                <h3 className="text-xl font-bold mb-2 text-highlight">
+                  Welcome Screen
+                </h3>
+                <p className="text-gray-400">
+                  Intuitive start screen with clear navigation and game
+                  introduction.
+                </p>
+              </div>
+            </div>
+
+            {/* Screenshot 4 - Game Over */}
+            <div className="bg-black/50 rounded-lg overflow-hidden border border-gray-800">
+              <Image
+                src="/main_image/game over screen.png"
+                alt="Border Door Game - Game Over Screen"
+                width={600}
+                height={400}
+                className="w-full h-64 object-cover"
+              />
+              <div className="p-4">
+                <h3 className="text-xl font-bold mb-2 text-highlight">
+                  Results Analysis
+                </h3>
+                <p className="text-gray-400">
+                  Comprehensive game over screen with performance analytics and
+                  replay options.
+                </p>
+              </div>
+            </div>
+          </div>
         </div>
       </section>
 
@@ -217,6 +363,22 @@ export default function Home() {
                     className="hover:text-highlight transition-colors"
                   >
                     Home
+                  </a>
+                </li>
+                <li>
+                  <a
+                    href="#abstract"
+                    className="hover:text-highlight transition-colors"
+                  >
+                    About
+                  </a>
+                </li>
+                <li>
+                  <a
+                    href="#screenshots"
+                    className="hover:text-highlight transition-colors"
+                  >
+                    Screenshots
                   </a>
                 </li>
                 <li>
