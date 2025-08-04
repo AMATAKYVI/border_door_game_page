@@ -150,7 +150,14 @@ export default function Home() {
                 </div>
                 <div className="flex items-center">
                   <span className="text-highlight font-bold w-20">GitHub:</span>
-                  <span>github.com/borderdoorgame</span>
+                  <a
+                    href="https://github.com/AMATAKYVI/border_door_game_page"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="hover:text-highlight transition-colors text-blue-200 underline decoration-blue-200"
+                  >
+                    Github
+                  </a>
                 </div>
               </div>
             </div>
@@ -257,7 +264,9 @@ export default function Home() {
                   Discord
                 </a>
                 <a
-                  href="#"
+                  href="https://github.com/AMATAKYVI/border_door_game_page"
+                  target="_blank"
+                  rel="noopener noreferrer"
                   className="text-gray-400 hover:text-highlight transition-colors"
                 >
                   GitHub
